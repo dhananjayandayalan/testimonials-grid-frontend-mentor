@@ -102,7 +102,7 @@ body {
     &:nth-child(5) {
       background: white;
       h1,
-      h3 {
+      h2 {
         color: var(--Very-dark-blackish-blue);
       }
 
@@ -121,7 +121,7 @@ body {
         border-radius: 50%;
       }
       &__text {
-        h3 {
+        h2 {
           font-weight: 500;
           font-size: 1.8rem;
           font-size: clamp(
@@ -131,7 +131,7 @@ body {
           );
           color: var(--White);
         }
-        h4 {
+        h3 {
           font-size: 1.6rem;
           font-size: clamp(1.6rem, 1rem + 0.9244992295839755vw ,2rem);
           color: var(--Light-gray);

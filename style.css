@@ -90,8 +90,8 @@ body {
   background: white;
 }
 .testimonial__card:nth-child(3) h1,
-.testimonial__card:nth-child(3) h3, .testimonial__card:nth-child(5) h1,
-.testimonial__card:nth-child(5) h3 {
+.testimonial__card:nth-child(3) h2, .testimonial__card:nth-child(5) h1,
+.testimonial__card:nth-child(5) h2 {
   color: var(--Very-dark-blackish-blue);
 }
 .testimonial__card:nth-child(3) p, .testimonial__card:nth-child(5) p {
@@ -107,13 +107,13 @@ body {
   max-width: 56px;
   border-radius: 50%;
 }
-.testimonial__card__profile__text h3 {
+.testimonial__card__profile__text h2 {
   font-weight: 500;
   font-size: 1.8rem;
   font-size: clamp(1.8rem, 1rem + 0.9244992296vw, 2.2rem);
   color: var(--White);
 }
-.testimonial__card__profile__text h4 {
+.testimonial__card__profile__text h3 {
   font-size: 1.6rem;
   font-size: clamp(1.6rem, 1rem + 0.9244992296vw, 2rem);
   color: var(--Light-gray);

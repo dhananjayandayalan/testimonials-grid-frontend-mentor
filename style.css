@@ -121,7 +121,6 @@ body {
 .testimonial__card__description {
   color: var(--White);
   font-size: clamp(1.6rem, 1.4rem + 0.51vw, 2rem);
-  line-height: 1.6;
   font-weight: 500;
   padding-bottom: 1.5rem;
 }

@@ -38,27 +38,28 @@ h6 {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem;
   font-size: 1.3rem;
   font-family: 'Barlow Semi Condensed', monospace;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: var(--Light-gray);
+  display: grid;
+  place-content: center;
 }
 
 .testimonial {
-  padding: 8rem 4rem;
   display: grid;
-  gap: 2rem;
-  max-width: 120rem;
+  max-width: 111rem;
+  gap: 3rem;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three'
+  'four'
+  'five';
   margin-inline: auto;
-  grid-auto-columns: auto;
-  grid-template-areas:
-    'one'
-    'two'
-    'three'
-    'four'
-    'five';
 
   &__card {
     padding: 3rem;
@@ -116,17 +117,18 @@ body {
       gap: 1.5rem;
       padding-bottom: 1.5rem;
       img {
-        max-width: 56px;
+        max-width: 3rem;
         border-radius: 50%;
       }
       &__text {
         h2 {
-          font-weight: 500;
-          font-size: 1.8rem;
+          font-size: 1.3rem;
+          font-weight: 600;
           color: var(--White);
         }
         h3 {
-          font-size: 1.6rem;
+          font-size: 1.2rem;
+          font-weight: 500;
           color: var(--Light-gray);
         }
       }
@@ -134,12 +136,14 @@ body {
 
     &__description {
       color: var(--White);
-      font-size: 1.8rem;
+      font-size: clamp(1.6rem, calc(1.4rem + 0.51vw), 2rem);
+      line-height: 1.6;
+      font-weight: 500;
       padding-bottom: 1.5rem;
     }
 
     &__quote {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       color: var(--Light-gray);
       font-weight: 600;
     }
@@ -147,25 +151,20 @@ body {
 }
 
 @media (min-width: 37.5em) {
-  body {
-    display: grid;
-    place-items: center;
-  }
   .testimonial {
+    padding: unset;
+    grid-auto-columns: auto;
     grid-template-areas:
+      'two three'
       'one one'
-      'two five'
-      'three five'
-      'four four';
+      'four five';
   }
 }
 
 @media (min-width: 64em) {
-  body {
-    display: flex;
-    place-items: center;
-  }
   .testimonial {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
     grid-template-areas:
       'one one two five'
       'three four four five';

@@ -49,9 +49,8 @@ body {
 .testimonial {
   padding: 8rem 4rem;
   display: grid;
-
   gap: 2rem;
-  max-width: 130rem;
+  max-width: 120rem;
   margin-inline: auto;
   grid-auto-columns: auto;
   grid-template-areas:
@@ -124,16 +123,10 @@ body {
         h2 {
           font-weight: 500;
           font-size: 1.8rem;
-          font-size: clamp(
-            1.8rem,
-            1rem + 0.9244992295839755vw,
-            2.2rem
-          );
           color: var(--White);
         }
         h3 {
           font-size: 1.6rem;
-          font-size: clamp(1.6rem, 1rem + 0.9244992295839755vw ,2rem);
           color: var(--Light-gray);
         }
       }
@@ -142,13 +135,11 @@ body {
     &__description {
       color: var(--White);
       font-size: 1.8rem;
-      font-size: clamp(1.8rem, 1rem + 0.9244992295839755vw, 2.0rem);
       padding-bottom: 1.5rem;
     }
 
     &__quote {
       font-size: 1.1rem;
-      font-size: clamp(1.1rem, 1rem + 0.9244992295839755vw, 1.5rem);
       color: var(--Light-gray);
       font-weight: 600;
     }

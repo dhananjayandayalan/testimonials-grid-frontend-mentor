@@ -49,7 +49,7 @@ body {
   padding: 8rem 4rem;
   display: grid;
   gap: 2rem;
-  max-width: 130rem;
+  max-width: 120rem;
   margin-inline: auto;
   grid-auto-columns: auto;
   grid-template-areas: "one" "two" "three" "four" "five";
@@ -110,23 +110,19 @@ body {
 .testimonial__card__profile__text h2 {
   font-weight: 500;
   font-size: 1.8rem;
-  font-size: clamp(1.8rem, 1rem + 0.9244992296vw, 2.2rem);
   color: var(--White);
 }
 .testimonial__card__profile__text h3 {
   font-size: 1.6rem;
-  font-size: clamp(1.6rem, 1rem + 0.9244992296vw, 2rem);
   color: var(--Light-gray);
 }
 .testimonial__card__description {
   color: var(--White);
   font-size: 1.8rem;
-  font-size: clamp(1.8rem, 1rem + 0.9244992296vw, 2rem);
   padding-bottom: 1.5rem;
 }
 .testimonial__card__quote {
   font-size: 1.1rem;
-  font-size: clamp(1.1rem, 1rem + 0.9244992296vw, 1.5rem);
   color: var(--Light-gray);
   font-weight: 600;
 }

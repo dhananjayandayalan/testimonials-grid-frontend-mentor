@@ -113,7 +113,7 @@ body {
   font-size: clamp(1.8rem, 1rem + 0.9244992296vw, 2.2rem);
   color: var(--White);
 }
-.testimonial__card__profile__text h5 {
+.testimonial__card__profile__text h4 {
   font-size: 1.6rem;
   font-size: clamp(1.6rem, 1rem + 0.9244992296vw, 2rem);
   color: var(--Light-gray);
